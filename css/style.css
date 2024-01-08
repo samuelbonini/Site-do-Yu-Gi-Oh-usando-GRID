@@ -352,7 +352,7 @@ p {
   background-size: cover;
   background-position: center;
   position: fixed;
-  left: 10px; /* Define a distância do canto esquerdo */
+  right: 10px; /* Define a distância do canto esquerdo */
   border-radius: 50%;
   z-index: 9999;
   margin-bottom: 10px; /* Espaço entre os botões */
