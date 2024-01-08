@@ -1,7 +1,7 @@
-body, p, h1, ul, li, blockquote {
+body, p, h1, h2, ul, li, blockquote {
 padding: 0px;
 margin: 0px;
-background: rgb(32, 31, 31);
+
 }
 
 body {
@@ -29,7 +29,7 @@ img {
 
 strong {
   font-family: "matrix", Georgia, sans-serif;
-  color: rgb(253, 42, 42);
+  color: rgb(253, 42, 42);;
 }
 
 
@@ -215,7 +215,23 @@ box-shadow: 0px 0px 15px 0px rgba(138, 17, 8, 0.342);
   gap: 30px;
 }
 
+.presencial {
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 3em;
+}
 
+@media (max-width: 550px) {
+  .presencial {
+    font-size: 2.2em;
+  }
+}
+
+.camp-presencial {
+margin: 20px 0px 5px 0px;
+border: 3px solid rgb(88, 22, 22);
+}
 
 @media (max-width: 600px) {
   content {
@@ -225,7 +241,7 @@ box-shadow: 0px 0px 15px 0px rgba(138, 17, 8, 0.342);
 
 
 .paragrafo {
-  background: #242323;
+background: #242323;
  border-radius: 5px;
  padding: 12px;
  text-align: center;
