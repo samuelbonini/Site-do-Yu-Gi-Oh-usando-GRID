@@ -1,6 +1,7 @@
 body, p, h1, ul, li, blockquote {
 padding: 0px;
 margin: 0px;
+background: rgb(32, 31, 31);
 }
 
 body {
