@@ -6,10 +6,10 @@ ScrollReveal().reveal('.presencial');
 
 
 
-sr.reveal('.titulo', {duration:2500})
+sr.reveal('.titulo', {duration:2000})
 sr.reveal('.presencial', {
 rotate: {x: 0, y: 80, z:0},
-duration: 2000
+duration: 1500
 })
 
 
