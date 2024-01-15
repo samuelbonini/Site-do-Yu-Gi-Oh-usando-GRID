@@ -150,7 +150,6 @@ strong {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2vw;
-  padding: 0 1vw;
 }
 
 .gallery-items {
@@ -169,6 +168,7 @@ flex-grow: 1;
 }
 
 .galeria {
+  letter-spacing: 2px;
   font-family: 'DM Serif Display', serif;
   padding: 5px;
   margin: 30px;
