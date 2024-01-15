@@ -9,6 +9,7 @@ li,
 blockquote {
   padding: 0px;
   margin: 0px;
+  
 }
 
 body {
@@ -180,9 +181,6 @@ transition: 0.2s;
   color: white;
   text-shadow: 2px 2px 4px rgb(139, 4, 4);
 }
-
-
-
 
 
 .presencial {
