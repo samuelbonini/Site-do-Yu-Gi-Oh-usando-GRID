@@ -177,13 +177,10 @@ transition: 0.2s;
   margin: 30px;
   text-align: center;
   font-size: 3em;
-  background: linear-gradient(to top, #fffcfb, #ff3300, #f83218);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: 2px 2px 4px #ff1e001c;
-
+  color: white;
+  text-shadow: 2px 2px 4px rgb(139, 4, 4);
 }
+
 
 
 
@@ -203,7 +200,7 @@ transition: 0.2s;
 
 @media (max-width: 550px) {
   .presencial {
-    font-size: 2.2em;
+    font-size: 3em;
   }
 }
 
