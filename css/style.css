@@ -34,7 +34,7 @@ img {
 
 strong {
   font-family: "matrix", Georgia, sans-serif;
-  color: rgb(253, 42, 42);
+  color: #fd2a2a;
 }
 
 .citacao {
@@ -82,6 +82,11 @@ strong {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
+}
+
+.inicio-menu {
+  border: 2px solid rgb(100, 6, 6);
+  border-radius: 5px;
 }
 
 .logo {
@@ -141,6 +146,7 @@ strong {
 
 .presencial {
   font-family: 'DM Serif Display', serif;
+  margin: 70px 0px 0px 0px;
   letter-spacing: 2px;
   color: white;
   padding: 12px;
@@ -171,7 +177,7 @@ strong {
 }
 
 .efeito-text:hover {
-  color:  rgb(253, 42, 42);;
+  color:  #fd2a2a;;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
@@ -188,7 +194,7 @@ strong {
 
 .camp-presencial {
   margin: 20px 0px 0px 0px;
-  border: 3px solid rgb(88, 22, 22);
+  
 }
 
 @media (max-width: 600px) {
@@ -223,23 +229,154 @@ strong {
   text-shadow: 1px 1px 1px #720404, 2px 2px 2px #000000, 3px 3px 3px #720303;
 }
 
-.junte-link {
-  display: grid;
-  padding: 10px 20px;
-  background-color: #242323;
-  border-radius: 5px;
-  padding: 15px 25px;
-  border-radius: 5px;
-  margin: 0 auto;
-}
+/* BOTAO SAIBA MAIS */
 
-.junte-botao {
+.junte-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  margin: 0px 0;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  background: none;
   font-family: 'DM Serif Display', serif;
-  color: white;
   text-align: center;
   font-size: 3em;
- 
 }
+
+.label {
+letter-spacing: 10px;
+}
+
+.junte-link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: content-box;
+  border: 1px solid #222;
+  border-bottom: none;
+  height: 20%;
+  transform: translateY(-10px) translateX(-50%);
+  transition: all .4s;
+  display: block;
+}
+
+.junte-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: content-box;
+  border: 1px solid #222;
+  border-top: none;
+  height: 20%;
+  transform: translateY(10px) translateX(-50%);
+  transition: all .4s;
+  display: block;
+}
+
+.junte-link .underlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.junte-link .underlay:before {
+  content: "";
+  display: block;
+  width: 150%;
+  height: 400%;
+  background: #222;
+  padding: 0;
+  box-sizing: border-box; 
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 20;
+  transition: all .4s linear;
+  transform: translateX(-110%)  translateY(-50%) rotate(15deg);
+  z-index: 10;
+
+}
+
+.junte-link .underlay:after {
+  content: "";
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px -2px 0 2px #fd2a2a, -2px 3px 0 2px #c51212;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(3px, 3px);
+  background: #fd2a2a;
+}
+
+.junte-link .label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 90px;
+  box-sizing: border-box; 
+  position: relative;
+  z-index: 20;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.junte-link .label::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  box-sizing: border-box; 
+  position: absolute;
+  z-index: 30;
+  background: #222;
+  right: -3px;
+  bottom: -3px;
+  transition: all .4s 0s;
+}
+
+.junte-link:hover {
+  cursor: pointer;
+}
+
+.junte-link:hover .underlay:before {
+  transform: translateX(-10%)  translateY(-50%) rotate(15deg);
+}
+
+.junte-link:hover label:after {
+  background: #fff;
+  transition: all .4s .4s;
+}
+
+.junte-link:active:before {
+  transform: translateY(-5px) translateX(-50%);
+  padding: 10px 5px;
+}
+
+.junte-link:active:after {
+  transform: translateY(5px) translateX(-50%);
+  padding: 10px 5px;
+}
+
+/* BOTAO SAIBA MAIS ACIMA */
 
 @media (max-width: 500px) {
 .paragrafo-principal {

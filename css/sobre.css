@@ -87,6 +87,11 @@ strong {
   align-items: center;
 }
 
+.sobre-menu {
+  border: 2px solid rgb(100, 6, 6);
+  border-radius: 5px;
+}
+
 .logo {
   max-width: 80px;
 }
