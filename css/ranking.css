@@ -1,3 +1,5 @@
+@import url(background.css);
+
 body,
 p,
 h1,
@@ -37,41 +39,12 @@ strong {
   color: #fd2a2a;
 }
 
-
 /* GRID GERAL */
-
-.estrutura {
-  display: grid;
-  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
-  grid-template-areas:
-    "header header header"
-    "content content content"
-    "footer footer footer";
-}
-
-@media (max-width: 1200px) {
-  .estrutura {
-    grid-template-areas:
-      "header header header"
-      "content content content"
-      "footer footer footer";
-  }
-}
-
-@media (max-width: 760px) {
-  .estrutura {
-    grid-template-columns: 100%;
-    grid-template-areas:
-      "header"
-      "content"
-      "footer";
-  }
-}
 
 /* HEADER */
 
 .header {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   grid-area: header;
   padding: 30px;
   display: grid;
@@ -139,43 +112,10 @@ strong {
   gap: 30px;
 }
 
-
-
-
-.titulo {
-  visibility: hidden;
-}
-
-@media (max-width: 550px) {
-  .presencial,
-  .efeito-text {
-    font-size: 2.2em;
-  }
-}
-
-.camp-presencial {
-  margin: 20px 0px 0px 0px;
-  
-}
-
 @media (max-width: 600px) {
   content {
     grid-template-columns: auto;
   }
-}
-
-
-
-
-.paragrafo-principal {
-  font-family: 'DM Serif Display', serif;
-  margin: 70px 0px 70px 0px;
-  padding: 12px;
-  text-align: center;
-  font-size: 30px;
-  letter-spacing: 1.5px;
-  font-size: 2em;
-  text-shadow: 1px 1px 1px #720404, 2px 2px 2px #000000, 3px 3px 3px #720303;
 }
 
 /* BOTAO SAIBA MAIS */
@@ -191,13 +131,13 @@ strong {
   color: #fff;
   font-weight: 600;
   background: none;
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   text-align: center;
   font-size: 3em;
 }
 
 .label {
-letter-spacing: 10px;
+  letter-spacing: 10px;
 }
 
 .junte-link:before {
@@ -212,7 +152,7 @@ letter-spacing: 10px;
   border-bottom: none;
   height: 20%;
   transform: translateY(-10px) translateX(-50%);
-  transition: all .4s;
+  transition: all 0.4s;
   display: block;
 }
 
@@ -228,7 +168,7 @@ letter-spacing: 10px;
   border-top: none;
   height: 20%;
   transform: translateY(10px) translateX(-50%);
-  transition: all .4s;
+  transition: all 0.4s;
   display: block;
 }
 
@@ -252,15 +192,14 @@ letter-spacing: 10px;
   height: 400%;
   background: #222;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 0;
   z-index: 20;
-  transition: all .4s linear;
-  transform: translateX(-110%)  translateY(-50%) rotate(15deg);
+  transition: all 0.4s linear;
+  transform: translateX(-110%) translateY(-50%) rotate(15deg);
   z-index: 10;
-
 }
 
 .junte-link .underlay:after {
@@ -281,7 +220,7 @@ letter-spacing: 10px;
   width: 100%;
   height: 100%;
   padding: 20px 90px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   position: relative;
   z-index: 20;
   font-size: 16px;
@@ -293,13 +232,13 @@ letter-spacing: 10px;
   display: block;
   width: 5px;
   height: 5px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   position: absolute;
   z-index: 30;
   background: #222;
   right: -3px;
   bottom: -3px;
-  transition: all .4s 0s;
+  transition: all 0.4s 0s;
 }
 
 .junte-link:hover {
@@ -307,12 +246,12 @@ letter-spacing: 10px;
 }
 
 .junte-link:hover .underlay:before {
-  transform: translateX(-10%)  translateY(-50%) rotate(15deg);
+  transform: translateX(-10%) translateY(-50%) rotate(15deg);
 }
 
 .junte-link:hover label:after {
   background: #fff;
-  transition: all .4s .4s;
+  transition: all 0.4s 0.4s;
 }
 
 .junte-link:active:before {
@@ -327,53 +266,6 @@ letter-spacing: 10px;
 
 /* BOTAO SAIBA MAIS ACIMA */
 
-@media (max-width: 500px) {
-.paragrafo-principal {
-  letter-spacing: 1.0px;
-  font-size: 1.5em;
-  margin: 0px 0px 70px 0px;
-
-}
-}
-
-
-.col-wide {
-  grid-column: 1 / -1;
-}
-
-.titulo {
-  margin: 80px 0px 0px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.titulo img {
-  max-width: 450px;
-  align-self: center;
-}
-
-@media (max-width: 500px) {
-  .titulo img {
-    max-width: 270px;
-  }
-  .titulo {
-      margin: 0px 0px 0px 0px;
-  }
-}
-
-
-.titulo2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.titulo2 img {
-  max-width: 180px;
-  align-self: center;
-}
-
 /* ESTILOS CONTENT */
 
 p {
@@ -381,7 +273,6 @@ p {
   line-height: 1.6;
   letter-spacing: 0.02em;
 }
-
 
 /*FOOTER */
 
