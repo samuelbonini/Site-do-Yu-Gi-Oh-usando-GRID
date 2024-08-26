@@ -12,12 +12,16 @@
   flex-direction: column;
 }
 
-.logo-ranking img {
-  width: 300px;
-  padding: 30px;
-  max-height: auto;
+.logo-ranking {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.logo-ranking img {
+  width: 260px;
+  padding: 30px;
+  max-height: auto;
 }
 
 .titulo-ranking {
@@ -30,77 +34,98 @@
   font-family: "matrix", Georgia, sans-serif;
   font-weight: 400;
   margin-bottom: 30px;
+  letter-spacing: 2px;
 }
+
 
 /* PARTE 1 */
 
-.descricao-ranking {
+.descricao-rank {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 30px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
-.descricao-ranking img {
-  width: 70px;
-  height: 70px;
+.descricao-rank img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
 }
 
 .fundo-rank1 {
-  background-color: #5808088f;
-  padding: 8px 120px;
+  background-color: #58080885;
+  padding: 8px;
   border-radius: 10px;
+  margin-right: 10px;
+  width: 350px; /* Defina uma largura fixa para a caixa de nome */
+  text-align: center; /* Alinhe o texto ao centro (opcional) */
+  padding-left: 20px; /* Espaço à esquerda */
 }
 
 .jogador-rank {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: "matrix", Georgia, sans-serif;
+  color: #fff;
 }
 
 
 .fundo-rank2 {
-  background-color: #5808088f;
-  padding: 8px 22px;
+  background-color: #58080885;
+  padding: 8px;
   border-radius: 10px;
+  width: 100px; /* Defina uma largura fixa para a caixa de pontos */
+  text-align: center; /* Alinhe o texto ao centro (opcional) */
 }
-
+  
 .total-rank {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: "matrix", Georgia, sans-serif;
+  color: #fff;
 }
-
 
 /* PARTE 2 NOMES */
 
 .descricao-rank-nomes {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 30px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 8px;
 }
+
 .descricao-rank-nomes img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin-right: 20px;
 }
 
 .fundo-rank-nomes1 {
-background-color: #5808088f;
-padding-bottom: 2px;
-border-radius: 10px;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 350px; /* Defina uma largura fixa para a caixa de nome */
+  text-align: left; /* Alinhe o texto ao centro (opcional) */
+  padding-left: 20px; /* Espaço à esquerda */
 }
 
 .jogador-rank-nomes {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: "matrix", Georgia, sans-serif;
+  color: #580808;
 }
 
 
 .fundo-rank-nomes2 {
-  background-color: #5808088f;
-  padding: 8px 22px;
+  background-color: #fff;
+  padding: 8px;
   border-radius: 10px;
-  }
+  width: 100px; /* Defina uma largura fixa para a caixa de pontos */
+  text-align: center; /* Alinhe o texto ao centro (opcional) */
+}
   
 .total-rank-nomes {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: "matrix", Georgia, sans-serif;
+  color: #580808;
 }
