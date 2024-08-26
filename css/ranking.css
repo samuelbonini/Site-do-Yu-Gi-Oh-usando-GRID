@@ -1,0 +1,106 @@
+.background-ranking {
+  background: rgb(238,54,54);
+  background: linear-gradient(160deg, rgba(238,54,54,1) 1%, rgba(136,31,31,1) 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.ranking-page {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo-ranking img {
+  width: 300px;
+  padding: 30px;
+  max-height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-ranking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-family: "matrix", Georgia, sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/* PARTE 1 */
+
+.descricao-ranking {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.descricao-ranking img {
+  width: 70px;
+  height: 70px;
+}
+
+.fundo-rank1 {
+  background-color: #5808088f;
+  padding: 8px 120px;
+  border-radius: 10px;
+}
+
+.jogador-rank {
+  font-size: 2rem;
+  font-family: "matrix", Georgia, sans-serif;
+}
+
+
+.fundo-rank2 {
+  background-color: #5808088f;
+  padding: 8px 22px;
+  border-radius: 10px;
+}
+
+.total-rank {
+  font-size: 2rem;
+  font-family: "matrix", Georgia, sans-serif;
+}
+
+
+/* PARTE 2 NOMES */
+
+.descricao-rank-nomes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.descricao-rank-nomes img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.fundo-rank-nomes1 {
+background-color: #5808088f;
+padding-bottom: 2px;
+border-radius: 10px;
+}
+
+.jogador-rank-nomes {
+  font-size: 2rem;
+  font-family: "matrix", Georgia, sans-serif;
+}
+
+
+.fundo-rank-nomes2 {
+  background-color: #5808088f;
+  padding: 8px 22px;
+  border-radius: 10px;
+  }
+  
+.total-rank-nomes {
+  font-size: 2rem;
+  font-family: "matrix", Georgia, sans-serif;
+}

@@ -5,4 +5,28 @@
 /*HEADER*/
 
 @import url(style.css);
+@import url(sobre.css);
 @import url(ranking.css);
+
+body,
+p,
+h1,
+h2,
+ul,
+li,
+blockquote {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Ubuntu", Georgia, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
