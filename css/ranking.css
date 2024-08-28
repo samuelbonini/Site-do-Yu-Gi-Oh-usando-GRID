@@ -9,7 +9,7 @@
   width: auto;
   display: flex;
   justify-content: center;
-  padding-bottom: 200px;
+  padding-bottom: 140px;
 }
 
 .imagem-decorativa {
@@ -43,7 +43,7 @@
   width: 260px;
   padding: 30px;
   max-height: auto;
-  margin-top: 30px;
+  margin-top: -60px;
   transition: transform 0.6s ease; /* Transição suave */
 }
 
@@ -58,6 +58,7 @@
   align-items: center;
   color: #fff;
   text-decoration: underline;
+  text-decoration-color: #580808;
   font-size: 1.2rem;
   font-family: "matrix", Georgia, sans-serif;
   font-weight: 400;
@@ -180,4 +181,159 @@ background-color: #580808;
 
 .footer-ranking a:hover {
   color: #ff3333;
+}
+
+@media (max-width: 700px) {
+  .titulo-ranking {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  /* PARTE 1 */
+  .descricao-rank {
+    margin-bottom: 10px;
+  }
+  .descricao-rank img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+  .descricao-rank > .estrela {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 4px;
+  }
+  .fundo-rank1 {
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 220px; /* Defina uma largura fixa para a caixa de nome */
+    padding-left: 20px; /* Espaço à esquerda */
+  }
+  .jogador-rank {
+    font-size: 1.4rem;
+  }
+  .fundo-rank2 {
+    padding: 8px;
+    width: 80px; /* Defina uma largura fixa para a caixa de pontos */
+  }
+  .total-rank {
+    font-size: 1.4rem;
+  }
+  /* PARTE 2 NOMES */
+  
+  .descricao-rank-nomes {
+    margin-bottom: 2px;
+  }
+  
+  .descricao-rank-nomes img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .fundo-rank-nomes1 {
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 220px; /* Defina uma largura fixa para a caixa de nome */
+    padding-left: 20px; /* Espaço à esquerda */
+  }
+  
+  .jogador-rank-nomes {
+    font-size: 1.2rem;
+  }
+  
+  
+  .fundo-rank-nomes2 {
+    padding: 8px;
+    border-radius: 10px;
+    width: 80px; /* Defina uma largura fixa para a caixa de pontos */
+  }
+    
+  .total-rank-nomes {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-ranking {
+      margin: 60px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 540px) {
+  .titulo-ranking {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* PARTE 1 */
+  .descricao-rank {
+    margin-bottom: 0px;
+  }
+  .descricao-rank img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .descricao-rank > .estrela {
+    width: 50px;
+    height: 50px;
+    margin-right: 22px;
+  }
+  .fundo-rank1 {
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 130px; /* Defina uma largura fixa para a caixa de nome */
+  }
+  .jogador-rank {
+    font-size: 1.2rem;
+  }
+  .fundo-rank2 {
+    padding: 8px;
+    width: 50px; /* Defina uma largura fixa para a caixa de pontos */
+  }
+  .total-rank {
+    font-size: 1.2rem;
+  }
+  /* PARTE 2 NOMES */
+  
+  .descricao-rank-nomes {
+    margin-bottom: -8px;
+  }
+  
+  .descricao-rank-nomes img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .fundo-rank-nomes1 {
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 120px; /* Defina uma largura fixa para a caixa de nome */
+    padding-left: 20px; /* Espaço à esquerda */
+  }
+  
+  .jogador-rank-nomes {
+    font-size: 1rem;
+  }
+  
+  
+  .fundo-rank-nomes2 {
+    padding: 8px;
+    border-radius: 10px;
+    width: 50px; /* Defina uma largura fixa para a caixa de pontos */
+  }
+    
+  .total-rank-nomes {
+    font-size: 1rem;
+  }
 }
